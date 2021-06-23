@@ -7,7 +7,8 @@ public class Account {
     private double withdraw;
 
     public void setAccount(String accountName) {
-       name = accountName;
+
+        name = accountName;
     }
 
     public String getAccount() {
@@ -20,6 +21,7 @@ public class Account {
     }
 
     public double getBalance() {
+
         return balance;
     }
 
@@ -37,8 +39,15 @@ public class Account {
     }
 
     public double getWithdraw() {
-        balance =  balance - withdraw;
+        if(withdraw > balance){
+            System.out.println("Withdrawal amount exceeded account balance.");
+        }else {
+
+            balance = balance - withdraw;
+        }
         return balance;
 
     }
+
+
 }
