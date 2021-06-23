@@ -11,7 +11,7 @@ class AccountTest {
 
     @BeforeEach
     void setUp() {
-         myAccount = new Account();
+        myAccount = new Account();
     }
 
     @AfterEach
@@ -40,5 +40,9 @@ class AccountTest {
         myAccount.setBalance(8000.00);
         myAccount.setWithdraw(2500.00);
         assertEquals(5500.00, myAccount.getWithdraw());
+        myAccount.setBalance(5000.00);
+        myAccount.setWithdraw(8000.00);
+        assertEquals(5000.00, myAccount.getBalance());
     }
+
 }
