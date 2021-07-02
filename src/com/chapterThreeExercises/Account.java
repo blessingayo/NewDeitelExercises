@@ -6,12 +6,12 @@ public class Account {
     private double deposit;
     private double withdraw;
 
-    public void setAccount(String accountName) {
+    public void setAccountName(String accountName) {
 
         name = accountName;
     }
 
-    public String getAccount() {
+    public String getAccountName() {
         return name;
     }
 

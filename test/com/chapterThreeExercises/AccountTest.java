@@ -20,9 +20,9 @@ class AccountTest {
     }
 
     @Test
-    void testThatAccountCanBeSet(){
-        myAccount.setAccount("name");
-        assertEquals("name", myAccount.getAccount());
+    void testThatAccountHasName(){
+        myAccount.setAccountName("name");
+        assertEquals("name", myAccount.getAccountName());
     }
     @Test
     void testThatAccountCanSetBalance(){
